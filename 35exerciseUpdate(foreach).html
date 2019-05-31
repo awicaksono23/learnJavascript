@@ -7,20 +7,25 @@
     </body>
     
     <script>
-    	/*
+    	
         var newHolder = ["cat","dog","fish","bird"];
 
         var q = prompt("what did you want to look?");
-        var p = newHolder.indexOf(q);
+        // console.log('im looking for '+ newHolder[(q-1)]); // hanya jawab menggunakan angka(1,2,3,4) karena array
+
+        var p = newHolder.indexOf(q); //indexOf harus dijawab dengan string, karena bukan array
 
         var message = p > -1 ? "found":"Not there";
         console.log(message);
-        */
+        
+
+        
         var fruits = ["cat","dog","fish","bird"];
 
         fruits.forEach(function(item,index,array)
         {
         	console.log(item,index);
         });
+        
     </script>
 </html>

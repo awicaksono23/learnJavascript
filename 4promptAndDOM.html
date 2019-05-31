@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Document Object Model Basic 22</title>
+    </head>
+    <body>
+        <div id="div"> </div>
+        <input type="text" id='val'>
+    </body>
+    <br>
+     
+     <script type="text/javascript">
+         var q = prompt('what do you want to fill in input text');
+         var div = document.getElementById('div');
+         div.innerText = q;
+
+
+        var input = document.getElementById('val');
+         input.value = q;
+     </script>
+ 
+</html>

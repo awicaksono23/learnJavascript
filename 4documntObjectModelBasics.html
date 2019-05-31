@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html> 
     <head>
-        <title>Document Object Model Basic 2</title>
+        <title>Document Object Model Basic 22</title>
     </head>
     <body>
-        <div>hello World</div>
+        <div id="output"> </div>
     </body>
-    
+    <br>
     <script>
-     	document.write('hello world');
     	console.dir(document);
+
+        var b = document.URL;
+        var b1 = document.title;
+        var c = document.write(document.URL);
+
     </script>
+    <br>
+    <script type="text/javascript">
+        var output = document.getElementById('output');
+        output.innerHTML = 'Hello  s World';
+
+        output.innerText = 'Hello World <br>'; //akan tampil lebih dominan, innerHTML tidak tampil
+    </script>
+    <br>
+    <div id='output2'></div>
+    <script type="text/javascript">
+        document.getElementById('output2').innerHTML = 'welcome to my page';
+
+        document.getElementById('output2').innerHTML = document.title; // 'test'
+    </script>
+ 
 </html>
