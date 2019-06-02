@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Else if</title>
+</head>
+<body>
+	<div id="output">Hello</div>
+	<script type="text/javascript">
+		var output = document.getElementById('output');
+		var time = prompt('what time is it ? ');
+			
+		switch(time)
+		{
+			case 'Get Up':
+			html = '3.00 AM';
+			break;
+
+			case 'Lunch':
+			html = '4.00 AM';
+			break;
+			
+			case 'Work':
+			html = '8.00 AM';
+			break;
+			default:
+			html = 'Task Not Founded';
+		}	
+		output.innerHTML = html;
+			 
+		 
+	</script>
+</body>
+</html>

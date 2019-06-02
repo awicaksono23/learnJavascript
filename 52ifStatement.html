@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>If statement</title>
+</head>
+<body>
+	<div id='output'>If Statement</div>
+</body>
+	<script type="text/javascript">
+		
+		var userName = ['agung','rayen','yoga'];
+		var output = document.getElementById('output');
+		var inputName = prompt('Who are you ? ');
+		var outputHTML = "";
+
+		if(userName.indexOf(inputName) > -1)
+		{
+			alert('Hello! ' + inputName);
+			outputHTML = "Yeah! it's You. ";
+			var age = prompt('age ? ');
+			outputHTML += age > 18 ? 'you are above 18':'you are under 18'; 
+		} else {
+			outputHTML = "there was something wrong"; 
+		}
+		output.innerHTML = inputName + ' ,' + outputHTML;
+
+
+	</script>
+</html>

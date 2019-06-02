@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Intro Logic Statement</title>
+    </head>
+    <body>
+    	<div id="output">Ternary Condition</div>
+    	<input type="text" id="name">
+ 		<script type="text/javascript">
+ 			 var userName = ['yoga','lala','agung'];
+ 			 var userInput = prompt("what's your name ? "); 
+ 			 var output = document.getElementById('output');
+
+ 			 var output2 = document.getElementById('name');
+
+ 			 output.innerHTML = userName.indexOf(userInput) > -1 ? 'Welcome ':'denied '
+ 			 output.innerHTML += ',' + userInput;
+
+ 			 output2.value = userName.indexOf(userInput) > -1 ? 'Hi':'denied';
+ 			 output2.value += ',' + userInput;
+ 			 console.log(output2.value);
+
+ 		</script>
+    </body>
+</html>

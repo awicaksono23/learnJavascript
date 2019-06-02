@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Intro Logic Statement</title>
+    </head>
+    <body>
+    	<div id="output"></div>
+
+ 		<script type="text/javascript">
+ 			var answer = "Something went wrong";
+ 			var output = document.getElementById('output');
+
+ 			var question = prompt("ask me anything");
+ 			var randomIndex = Math.floor(Math.random()*6);
+
+ 			switch(randomIndex)
+ 			{
+ 				case 0:
+ 					answer = "it will work";
+ 					break;
+ 				case 1:
+ 					answer = 'maybe maybe not';
+ 					break;
+ 				case 2:
+ 					answer = 'Probably not';
+ 					break;
+ 			}
+
+
+ 		</script>
+    </body>
+</html>

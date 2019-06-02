@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Else if</title>
+</head>
+<body>
+	<div id="output">Hello</div>
+	<script type="text/javascript">
+		var output = document.getElementById('output');
+		var time = prompt('what time is it ? ');
+			
+			
+			 
+			
+		if(time >= 4 && time < 9){
+			task = "Wake up, it's morning"
+		} else if(time > 12 && time < 5){
+			task = "Go to work";
+		} else if(time > 9 && time < 12){
+			task = "It's time to have lunch";
+		} else if(time >= 22){
+			task = "Go to sleep";
+		} else {
+			task = "You should be sleeping";
+		}
+		output.innerHTML = task;
+	</script>
+</body>
+</html>
