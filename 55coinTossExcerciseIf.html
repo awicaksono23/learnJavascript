@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Coin Toss</title>
+</head>
+<body>
+	<div id="output">Your Choice</div>
+	
+	<script type="text/javascript">
+		var html = "something went wrong";
+		var q = prompt('Birds or Number ?');
+		var b = document.getElementById('output');
+		var c = q == "birds" ? 1:0;
+		var d = Math.floor(Math.random()*2);
+		if(c == d)
+		{
+			html = 'Correct';
+		} else {
+			html = 'Wrong';
+		}
+		b.innerHTML = html;
+	</script>
+</body>
+</html>
