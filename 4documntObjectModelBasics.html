@@ -11,8 +11,10 @@
     	console.dir(document);
 
         var b = document.URL;
-        var b1 = document.title;
+        var b1 = 'new title';
+        var bb = document.title = b1;
         var c = document.write(document.URL);
+        console.log(bb);
 
     </script>
     <br>

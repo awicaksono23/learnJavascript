@@ -13,19 +13,19 @@
         var q = prompt("what did you want to look?");
         // console.log('im looking for '+ newHolder[(q-1)]); // hanya jawab menggunakan angka(1,2,3,4) karena array
 
-        var p = newHolder[(q-1)]; //indexOf harus dijawab dengan string, karena bukan array -> newHolder.indexOf(q);
+        var p = newHolder.indexOf(q); //indexOf harus dijawab dengan string, karena bukan array -> newHolder.indexOf(q);
 
-        var message = (p) ? "found":"Not there";
+        var message = (newHolder[p]) ? "found":"Not there";
         console.log(message);
         
 
         
-        // var fruits = ["cat","dog","fish","bird"];
+        var fruits = ["cat","dog","fish","bird"];
 
-        // fruits.forEach(function(item,index,array)
-        // {
-        // 	console.log(item,index);
-        // });
+        fruits.forEach(function(item,index,array)
+        {
+        	console.log(item,index);
+        });
         
     </script>
 </html>

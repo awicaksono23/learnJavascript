@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nested Loop</title>
+</head>
+<style type="text/css">
+	td{
+		border:1px solid black;
+	}
+</style>
+<body>
+<div id="output"></div>
+
+<script type="text/javascript">
+	var output = document.getElementById("output");
+	var html = "<table>";
+	for(var row=0;row<10;row++)
+	{
+		html += "<tr>";
+		for(var col=0;col<5;col++)
+		{
+			html += "<td> Cell " +(col+1)+ "<td>";
+		}
+		html += "</tr>";
+	}
+	html += "</table>";
+	output.innerHTML = html;
+</script>
+</body>
+</html>

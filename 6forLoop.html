@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>For Loop</title>
+</head>
+<body>
+<div id="output"></div>
+</body>
+	<script type="text/javascript">
+		var output = document.getElementById('output');
+		var caloriesBanana = 89;
+		var bananas = prompt("How many number do you want to loop ?");
+		var total = 0;
+
+		for(var x=1;x <= bananas ;x++){
+			total += caloriesBanana;
+			output.innerHTML += "You ate "+x+ " banana another "+caloriesBanana+" calories your total is now "+total+"<br>";
+		}
+		output.innerHTML += "Final total banana "+total;
+	</script>
+</html>

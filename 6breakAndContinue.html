@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Break and Continue</title>
+</head>
+<style type="text/css">
+	td{
+		border:1px solid black;
+	}
+</style>
+<body>
+	<div id="output"></div>
+</body>
+<script type="text/javascript">
+	
+	var output = document.getElementById('output');
+	var html = "<table>";
+	var holder = "empty";
+	for(var row = 0;row < 10; row++)
+	{
+		html += "<tr>";
+		for(var col = 0;col < 5;col++){
+			html += "<td>Cell = "+((col+1)+(row*5))+" = "+holder+"<td>";
+		}
+		html += "</tr>";
+		if(row === 5){ continue; }
+		holder = ((col+1)+(row*5));
+	}
+	html += "</table>";
+	output.innerHTML = html;
+
+</script>
+</html>

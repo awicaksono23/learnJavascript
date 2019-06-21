@@ -4,6 +4,42 @@
 	<title>Javascript loop</title>
 </head>
 <body>
+	<div id="val"></div>
+	<script type="text/javascript">
+		// var item = document.getElementById('item');
+		// var shoppingList = [];
+		// var howManyItem = prompt("How many item do you want to add");
+		// for(var x = 0;x<howManyItem;x++)
+		// {
+		// 	var addItem = prompt('what item do you want to add ?');
+		// 	shoppingList.push();
+		// 	var a = shoppingList[(addItem)];
+		// 	var output = item.innerText = a;
+		// 	console.log(output);
+		// }
 
+		var a = document.getElementById("val");
+		var q = prompt("How many number do you want to loop ?");
+		
+		q = Number(q);
+		var x = 1;
+		
+		/*
+		do
+		{
+			x++;
+			a.innerHTML += "value x=" + x + "<br>";
+		}
+		while(x < q);
+		*/
+
+		while(x < q)
+		{
+			a.innerHTML += "value x=" + x + "<br>";
+			x++;
+		}
+		a.innerHTML += "Final value x=" + x + "<br>";
+
+	</script>
 </body>
 </html>

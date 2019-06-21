@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perulangan dan percabangan</title>
+</head>
+<body>
+
+	<div id='output'>If Statement</div>
+
+</body>
+<script type="text/javascript">
+	    var names = ['john','layla','dani'];
+	    var arr = {car:'ford',model:'mustang'}; //for
+        for(var property in arr){
+            console.log(property + ' : ' + arr[property]);
+        }
+
+        for()
+
+        var fruits = ["cat","dog","fish","bird"]; //foreach
+        fruits.forEach(function(item,index,array)
+        {
+        	console.log(item,index);
+        });
+        
+
+        if(userName.indexOf(inputName) > -1) //if Else
+		{
+			alert('Hello! ' + inputName);
+			outputHTML = "Yeah! it's You. ";
+			var age = prompt('age ? ');
+			outputHTML += age > 18 ? 'you are above 18':'you are under 18'; 
+		} else {
+			outputHTML = "there was something wrong"; 
+		}
+		output.innerHTML = inputName + ' ,' + outputHTML;
+
+
+		var output = document.getElementById('output'); //switch
+		var time = prompt('what time is it ? ');	
+		switch(time)
+		{
+			case 'Get Up':
+			html = '3.00 AM';
+			break;
+
+			case 'Lunch':
+			html = '4.00 AM';
+			break;
+			
+			case 'Work':
+			html = '8.00 AM';
+			break;
+			default:
+			html = 'Task Not Founded';
+		}	
+		output.innerHTML = html;
+</script>
+</html>
