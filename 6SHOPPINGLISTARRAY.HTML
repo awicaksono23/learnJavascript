@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping List</title>
+</head>
+<body>
+<div id="output"></div>
+</body>
+<script type="text/javascript">
+	var output = document.getElementById('output');
+	var addItems;
+	var shoppingList = [];
+	var howManyTimes = prompt("How many items do you want to add ?");
+
+	for(var x=0;x<howManyTimes;x++)
+	{
+		addItems = prompt("Put your items here")
+		if(addItems == "no"){break;}
+		shoppingList.push(addItems);
+	}
+	for(addItems of shoppingList)
+	{
+		output.innerHTML += addItems + "<br>"; 
+	}
+</script>
+</html>

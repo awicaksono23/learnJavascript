@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loops And Objects</title>
+</head>
+<body>
+<div id="output"></div>
+</body>
+<script type="text/javascript">
+	var obj = {car:"kijang",color:"white"};
+	var output = document.getElementById("output");
+	for(var x in obj)
+	{
+		output.innerHTML += x + "."+obj[x]+"<br>";
+	}
+</script>
+</html>

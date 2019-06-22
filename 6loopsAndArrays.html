@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loops And Arrays</title>
+</head>
+<body>
+	<div id="output"></div>
+</body>
+<script type="text/javascript">
+	
+	var output = document.getElementById("output");
+	var userName = ["agung","yoga","lala"];
+	for(var x of userName)
+	{
+		output.innerHTML += x+"<br>";
+	}
+
+	for(var x=0;x<userName.length;x++)
+	{
+		output.innerHTML += userName[x]+"<br>";
+	}
+
+	for(var x = userName.length -1;x>=0;x--)
+	{
+		output.innerHTML += userName[x] + "<br>";
+	}
+
+
+	var x = 0;
+	while(userName[x])
+	{
+		output.innerHTML += userName[x] + "<br>";
+		x++;
+	}
+</script>
+</html>

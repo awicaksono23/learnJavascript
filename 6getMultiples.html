@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get Multiples</title>
+</head>
+<body>
+	<div id="output"></div>
+</body>
+<script type="text/javascript">
+	var output = document.getElementById("output");
+
+	var total = 0;
+	for(var x=0;x<20;x++)
+	{
+		if(x % 2 === 0)
+		{
+			total += x;
+			output.innerHTML += "value of x = "+x+" SubTotal = "+ total +"<br>";
+		}
+	}
+</script>
+</html>
