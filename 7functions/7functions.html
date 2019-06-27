@@ -5,6 +5,7 @@
 </head>
 <body>
 <div id="output"></div>
+<div id="output2"></div>
 </body>
 <script type="text/javascript">
 	/* function myFunction(){
@@ -12,11 +13,33 @@
 		output.innerHTML = "Hello Aws";
 	}
 	myFunction();
-	*/
 	var a = a();
 	function a(){
 		return "aaaa";
 	}
 	output.innerHTML = a;
+	*/
+
+	//function
+	var response = "55"; // global
+	
+	myFunc2();
+	var a = "Hello"; // <------------global
+	output2.innerHTML = myFunc2();
+	function myFunc2(){
+		var b = a + " " + "World";
+		/* output2.innerHTML = b; *tidak memanggil disini karna fungsi "lokal" tidak bisa memanggil variabel global
+		*/
+		return b;
+	}
+
+
+	function myFunc1(a,b,c){
+		var response = a+b+c; // local <--------------
+		output.innerHTML = response;
+		return response;
+	}
+	myFunc1(1,2,3);	
+	//console.log(response); //global
 </script>
 </html>

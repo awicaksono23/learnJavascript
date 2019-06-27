@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Kalkulator</title>
+</head>
+<body>
+<div id="output"></div>
+First : <input type="text" id="num1"><br>
+Second : <input id="num2" type="text"> 
+<input type="button" onclick="myFunc()" name="text" value="jumlahkan"><br>
+
+<script type="text/javascript">
+	var arr = ['a','b'];
+	var output = document.getElementById('output');
+	var num1 = document.getElementById('num1');
+	var num2 = document.getElementById('num2');
+
+	/*function myFunc(){
+		var a = Number(num1.value);
+		var b = "+"
+		var c = Number(num2.value);
+		var d = a + c;
+		outHTML(a,b,c,d)
+	}
+	function outHTML(a,b,c,d){
+		output.innerHTML = a + " " + b + " "+c + " = "+d;
+	}
+	*/
+	function myFunc(){
+		var a = num1.value+" + "+num2.value;
+		var b = Number(num1.value)+Number(num2.value)
+		outHTML(a,b);
+		/*output.innerHTML += a + " = " + b;
+		return a;
+		*/
+	}
+
+	function outHTML(a,b){
+		output.innerHTML += a + " = " + b; 
+	}
+</script>
+</body>
+</html>

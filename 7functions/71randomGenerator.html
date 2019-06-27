@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Generator</title>
+</head>
+<body>
+<div id="output"></div>
+<input type="button" onclick="myFunc()" value="onClick">
+<script type="text/javascript">
+	var output = document.getElementById('output');
+	var userName = ['lala','yoga','agung'];
+	function myFunc(){
+		var question = prompt('what do you think about them ?');
+		var randomName = Math.floor(Math.random()*userName.length);
+		output.innerHTML += userName[randomName]+" is "+question+"<br>";
+	}
+</script>
+</body>
+</html>
